@@ -1,0 +1,37 @@
+nav ul li button{
+   
+    margin-inline-start:750px;
+    height: 30px;
+    
+ }
+ nav ul li button i{
+     color: white;
+ }
+ i{
+     color: green;
+     font-size: 20px;
+ }
+ table{
+   border: 1px solid black;
+   border-collapse: collapse;
+    margin-left:400px;
+    margin-right:500px;
+    margin-top: 40px;
+    width:30%;
+    height:30%;
+
+ }
+ th{
+     text-align:left;
+     border: 1px solid black;
+    
+     height: 50%;
+     
+     
+ }
+ td{
+     text-align:left;
+     border: 1px solid black;
+     
+     height: 50%;
+ }

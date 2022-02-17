@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-sm  bg-dark nav-white">
+    <ul class="navbar-nav">
+
+       <li class="nav-item"> 
+           <a routerLink="/products" routerLinkActive="active" class="nav-link">Products</a>
+       </li>
+
+       
+       <li>
+        <a routerLink="/category" routerLinkActive="active" class="nav-link">Category</a>
+    </li>
+     <li>
+        <a routerLink="/supplier" routerLinkActive="active" class="nav-link">Suppliers</a>
+     </li>
+     <li>
+        <a routerLink="/customer" routerLinkActive="active" class="nav-link">Customers</a>
+     </li>
+     <li>
+        <a routerLink="/orders" routerLinkActive="active" class="nav-link">Orders</a>
+     </li>
+
+     <li class="nav-item">
+
+        <a routerLink="/login" routerLinkActive="active" class="nav-link"><button class="btn-success"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</button></a>
+     </li>
+     
+
+     
+     </ul>
+    
+</nav>
+<div class="image">
+<div class="search-container my-4">
+    <label><h2>Search</h2></label>
+     <input type="text" class="form-control" name="name" 
+     [(ngModel)]="name" (ngModelChange)="search()" placeholder="Search your supplier by name">
+     
+ </div>
+<p><b></b></p>
+
+<h3 class="bg-primary"><b>ALL Suppliers</b></h3>
+</div>
+<a routerLink="/create-supplier" routerLinkActive="active"class="nav-link"><button class="btn-danger">ADDNew</button></a>
+
+<div class="col-md-9">
+    <h2 style="text-align: center; margin-trim:40px;"></h2><br>
+    <div>
+       
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>ShopNameWithAddress</th>
+                    <th>AccountHolder</th>
+                    <th>AccountNumber</th>
+                    <th>BankName</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+             <tbody>
+                   <tr *ngFor="let supplier of suppliers">
+                       <td>{{supplier.id}}</td>
+                       <td>{{supplier.name}}</td>
+                       <td>{{supplier.phone}}</td>
+                       <td><a href="mailto:{{ supplier.email }}">{{ supplier.email }}</a></td>
+                       <td>{{supplier.shopname}}</td>
+                       <td>{{supplier.accholder}}</td>
+                       <td>{{supplier.accnumber}}</td>
+                       <td>{{supplier.bankname}}</td>
+
+    <td> <button class="btn-success" (click)="updatesupplier(supplier.id)">Edit</button></td>
+    <td><button class="btn-danger" (click)="deletesupplier(supplier.id)">Delete</button></td>
+    
+                   </tr>
+             </tbody>
+        </table>
+    </div>
+</div>

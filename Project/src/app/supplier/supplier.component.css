@@ -1,0 +1,66 @@
+nav ul li button{
+   
+    margin-inline-start:750px;
+    height: 30px;
+ }
+ h3{
+     color:black;
+     text-align: center;
+     margin-top: 30px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+     
+ }
+ .bg-primary{
+     height: 60px;
+     background-image: url("src/assets/images/product.jpg");
+     margin-top: 80px;
+ }
+ p{
+     margin-left: 60px;
+     margin-top: 20px;
+     font-size: 30px;
+ }
+ button{
+     height: 30px;
+     text-align: center;
+     margin-top: 0px;
+    
+ }
+ table{
+    height:30px;
+    text-align:left;
+    border: 1px black;
+    margin-left: 10%;
+    margin-right: 50%;
+    color: black;
+    table-layout: auto;
+    margin-bottom: 80px;
+    
+    
+   
+}
+.search-container{
+    position: relative;
+    width: 30%;
+    margin-left: 850px;
+    margin-right: 600px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+.search-result{
+    position: absolute;
+    background:white;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    display: none;
+}
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.image{
+    background-image: url("src/assets/images/product.jpg");
+}
+
+ 

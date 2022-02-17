@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-sm  bg-dark nav-white">
+    <ul class="navbar-nav">
+
+       <li class="nav-item"> 
+           <a routerLink="/products" routerLinkActive="active" class="nav-link">Products</a>
+       </li>
+
+       
+
+       <li>
+        <a routerLink="/category" routerLinkActive="active" class="nav-link">Category</a>
+      </li>
+      
+      <li>
+        <a routerLink="/supplier" routerLinkActive="active" class="nav-link">Suppliers</a>
+      </li>
+      <li>
+        <a routerLink="/customer" routerLinkActive="active" class="nav-link">Customers</a>
+      </li>
+      <li>
+        <a routerLink="/orders" routerLinkActive="active" class="nav-link">Orders</a>
+      </li>
+      
+      
+    
+     <li class="nav-item">
+
+        <a routerLink="/login" routerLinkActive="active" class="nav-link"><button class="btn-success"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</button></a>
+     </li>
+
+     
+     </ul>
+    
+</nav>
+<div class="image">
+  <div class="search-container my-4">
+    
+     
+  </div>
+<p><b></b></p>
+
+<h3 class="bg-primary"><b>ALL Categories</b></h3>
+</div>
+<a routerLink="/create-category" routerLinkActive="active"class="nav-link"><button class="btn-danger">ADDNew</button></a>
+
+<div class="col-md-9">
+    <h2 style="text-align: center; margin-trim:40px;"></h2><br>
+    <div>
+       
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+             <tbody>
+                   <tr *ngFor="let category of categorys">
+                       <td>{{category.id}}</td>
+                       <td>{{category.name}}</td>
+                     
+            
+     <td> <button class="btn-success" (click)="updatecategory(category.id)">Edit</button></td>
+    <td><button class="btn-danger" (click)="deletecategory(category.id)">Delete</button></td>
+    
+                   </tr>
+             </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+nav ul li button{
+   
+    margin-inline-start:750px;
+    height: 30px;
+ }
+ 
+ form{
+    margin-left:350px;
+    margin-right: 350px;
+ }
+ h3{
+     text-align: center;
+     margin-top: 20px;
+
+ }
+ button{
+     margin-top: 10px;
+     margin-bottom: 20px;
+ }
+ nav{
+     height: 70px;
+ }

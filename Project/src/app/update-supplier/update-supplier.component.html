@@ -1,0 +1,114 @@
+<nav class="navbar navbar-expand-sm  bg-dark nav-white">
+    <ul class="navbar-nav">
+  
+       <li class="nav-item"> 
+           <a routerLink="/products" routerLinkActive="active" class="nav-link" style="margin-top: 20px;">Products</a>
+       </li>
+  
+       
+         <li class="nav-item">
+             <a routerLink="/category" routerLinkActive="active" class="nav-link" style="margin-top:20px;">Category</a>
+         </li>
+         <li class="nav-item">
+            <a routerLink="/supplier" routerLinkActive="active" class="nav-link" style="margin-top:20px;">Suppliers</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/customer" routerLinkActive="active" class="nav-link" style="margin-top:20px;">Customers</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/orders" routerLinkActive="active" class="nav-link" style="margin-top:20px;">Orders</a>
+        </li>
+       
+    
+     <li class="nav-item">
+  
+        <a routerLink="/login" routerLinkActive="active" class="nav-link"><button class="btn-success"><i class="fa fa-sign-out" aria-hidden="true">Logout</i></button></a>
+     </li>
+     </ul>
+</nav>
+  
+  
+  <div>
+    <form (ngSubmit)="OnSubmit()" #supplieredit="ngForm">
+     <div>
+      <h3>Edit Supplier</h3>
+          <div>
+          <label>Name</label>
+          <input type="text" class="form-control" id="name"
+          [(ngModel)]="supplier.name" name="name"
+          placeholder="Enter name"
+            required   #name="ngModel" 
+            [class.is-invalid]="name.invalid && name.touched">
+           <small class="text-danger"[class.d-none]="name.valid || name.untouched">name is required</small>
+    </div>
+     
+       <div>
+          <label>Phone</label>
+          <input type="text" class="form-control" id="phone"
+          [(ngModel)]="supplier.phone" name="email"
+          placeholder="Enter contact"
+            required    #phone="ngModel"
+            [class.is-invalid]="phone.invalid && phone.touched">
+           <small class="text-danger"[class.d-none]="phone.valid || phone.untouched">contact is required</small>
+        </div>
+      
+      <div>
+          <label>Email</label>
+          <input type="email" class="form-control" id="email"
+          [(ngModel)]="supplier.email" name="email" 
+          placeholder="is required"
+            required   #email="ngModel" 
+            [class.is-invalid]="email.invalid && email.touched">
+           <small class="text-danger"[class.d-none]="email.valid || email.untouched">is required</small>
+     </div>
+           
+      
+       <div>
+          <label>ShopNameWithAddress</label>
+          <input type="text" class="form-control" id="shopname"
+          [(ngModel)]="supplier.shopname" name="shopname"
+          placeholder="Enter shopname with address"
+          required  #shopname="ngModel"
+          [class.is-invalid]="shopname.invalid && shopname.touched">
+           <small class="text-danger"[class.d-none]="shopname.valid || shopname.untouched">is required</small>
+       </div>
+     
+  
+      <div>
+          <label>Account Holder</label>
+          <input type="text" class="form-control" id="accholder"
+          [(ngModel)]="supplier.accholder" name="accholder"
+          placeholder="Enter accholder"
+            required  #accholder="ngModel"
+            [class.is-invalid]="accholder.invalid && accholder.touched">
+           <small class="text-danger"[class.d-none]="accholder.valid || accholder.untouched">AccountHolder is required</small>
+       </div>
+     
+  
+      <div>
+        <label>AccountNumber</label>
+        <input type="text" class="form-control" id="accnumber"
+        [(ngModel)]="supplier.accnumber" name="accnumber"
+        placeholder="Enter AccountNumber"
+          required  #accnumber="ngModel" 
+          [class.is-invalid]="accnumber.invalid && accnumber.touched">
+           <small class="text-danger"[class.d-none]="accnumber.valid || accnumber.untouched"> is required</small>
+      </div>
+
+      <div>
+        <label>BankName</label>
+        <input type="text" class="form-control" id="bankname"
+        [(ngModel)]="supplier.bankname" name="bankname"
+        placeholder="Enter Bank name"
+          required  #bankname="ngModel" 
+          [class.is-invalid]="bankname.invalid && bankname.touched">
+           <small class="text-danger"[class.d-none]="bankname.valid || bankname.untouched"> is required</small>
+      </div>
+  
+       
+  
+       <button class="btn btn-success" type="submit">Submit</button>
+       </div>
+     </form>
+    </div>
+

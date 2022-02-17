@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-sm  bg-dark nav-white">
+    <ul class="navbar-nav">
+      <li class="nav-item"> 
+        <a routerLink="/products" routerLinkActive="active" class="nav-link">Products</a>
+    </li>
+  
+       
+        
+      <li class="nav-item">
+        <a routerLink="/category" routerLinkActive="active" class="nav-link">Category</a>
+         </li>
+          
+     <li class="nav-item">
+        <a routerLink="/supplier" routerLinkActive="active" class="nav-link">Suppliers</a>
+         </li>
+           
+        <li class="nav-item">
+            <a routerLink="/customer" routerLinkActive="active" class="nav-link">Customers</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="/orders" routerLinkActive="active" class="nav-link">Orders</a>
+        </li>
+         
+    
+       
+       <li class="nav-item">
+         <a routerLink="/login" routerLinkActive="active" class="nav-link"><button class="btn-success"><i class="fa fa-sign-out" aria-hidden="true">Logout</i></button></a>
+     </li>
+     </ul>
+    </nav>
+<br>
+ <table>
+    <i class="fa fa-bars" aria-hidden="true">Product Details</i>
+    <tr>
+        <th>Product Name:</th>
+        <td>{{product.name}}</td>
+    </tr>
+
+    <tr>
+        <th>qunatity</th>
+        <td>{{product.quantity}}</td>
+    </tr>
+
+    <tr>
+        <th>Made in</th>
+        <td>{{product.madein}}</td>
+    </tr>
+
+    <tr>
+        <th>Brand</th>
+        <td>{{product.brand}}</td>
+    </tr>
+
+    <tr>
+        <th>Price</th>
+        <td>{{product.price}}</td>
+    </tr>
+
+    <tr>
+        <th>Status</th>
+        <td style="color: green;">{{product.status}}</td>
+    </tr>
+   
+    </table>
+

@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <div class="card">
+         <div class="text-center">
+             <h1>Login</h1>
+             <h6>Please enter username & password</h6>
+         </div>
+         <form (ngSubmit)="OnSubmit()">
+            <small class="text-danger">{{msg}}</small>
+            <div class="md-3">
+               <label>Admin</label>
+               <input type="text" class="form-control" id="username"
+               [(ngModel)]="user.username" name="username"
+               placeholder="Enter username"
+                 required #name="ngModel">
+                
+           </div>
+
+           <div class="md-3">
+            <label>Password</label>
+            <input type="password" class="form-control" id="password"
+            [(ngModel)]="user.password" name="username"
+            placeholder="Enter password"
+              required #password="ngModel">
+         </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+         </form>
+         
+      </div>
+     </div>
+ </div>
+</div>
+

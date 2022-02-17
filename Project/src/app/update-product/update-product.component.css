@@ -1,0 +1,46 @@
+.card{
+   margin-top:250px;
+    border: none;
+    width: 600px;
+    height:900px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.card  h1{
+  color: black;
+  margin-top:0px;
+}
+label{
+    color:black;
+    margin-bottom:10px;
+}
+button{
+    margin-top: 10px;
+    margin-bottom:30px;
+    width:80px;
+    
+}
+form{
+    
+    width: 500px;
+    height: 400px;
+    }
+nav ul li button{
+   margin-inline-start:750px;
+        height: 30px;
+        margin-top: 20px;
+     }
+nav{
+    height:60px;
+
+   
+}  
+
+
+
+
+     
